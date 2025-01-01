@@ -1,18 +1,18 @@
-import navLogo from "../../../assets/icon/Frame 1.png";
+import navLogo from "../../../assets/icon/navLogo.png";
 
 const NavBar = () => {
   const navOptions = (
     <>
-      <li>
+      <li className="font-bold">
         <a>Home</a>
       </li>
-      <li>
+      <li className="font-bold">
         <a>Products</a>
       </li>
-      <li tabIndex={0}>
+      <li className="font-bold" tabIndex={0}>
         <a>Receipe</a>
       </li>
-      <li>
+      <li className="font-bold">
         <a>About</a>
       </li>
     </>
@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <>
-     <div className="w-full absolute z-30 px-24 py-4">
+     <div className="w-full absolute z-30 px-24 py-4 ">
      <div className="navbar bg-opacity-30 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -47,15 +47,15 @@ const NavBar = () => {
               {navOptions}
             </ul>
           </div>
-          <div className="btn btn-ghost normal-case text-xl">
-            <img src="https://t4.ftcdn.net/jpg/06/62/29/25/360_F_662292591_3sFN882yT6tMslnKXwNPMlkrx1RNxzPv.jpg" className="w-32" alt="" />
+          <div className="">
+            <img src={navLogo} className="w-16"  alt="" />
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Get started</a>
+          <a className="btn">Login</a>
         </div>
       </div>
      </div>
